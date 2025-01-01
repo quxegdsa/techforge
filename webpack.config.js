@@ -39,6 +39,9 @@ module.exports = {
             loader: 'sass-loader', // Compiles Sass to CSS
             options: {
               implementation: require('sass'), // Use Dart Sass
+              sassOptions: {
+                silenceDeprecations: ['legacy-js-api'],
+              },
             },
           },
         ],
