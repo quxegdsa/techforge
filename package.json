@@ -46,13 +46,16 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@eslint/js": "^9.17.0",
+    "@webpack-cli/generators": "^3.0.7",
     "eslint": "^8.57.1",
     "eslint-plugin-react": "^7.37.3",
     "globals": "^15.14.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.3.0",
     "prettier": "^3.4.2",
-    "sass": "^1.83.0"
+    "sass": "^1.83.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
   },
   "lint-staged": {
     "*.{js,jsx}": [
