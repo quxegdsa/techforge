@@ -1,0 +1,28 @@
+# filepath: /path/to/your/project/bitbucket-pipelines.yml
+
+image: node:14
+
+pipelines:
+  default:
+    - step:
+        name: Install dependencies
+        caches:
+          - node
+        script:
+          - npm install
+    - step:
+        name: Run tests
+        script:
+          - npm test
+    - step:
+        name: Build application
+        script:
+          - npm run build
+  branches:
+    main:
+      - step:
+          name: Deploy to production
+          deployment: production
+          script:
+            - echo "Deploying to production..."
+            # Add your deployment commands here
